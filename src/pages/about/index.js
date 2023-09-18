@@ -36,7 +36,7 @@ export const About = () => {
               <div>
                 <a
                   href="../../resume/sudharsan_resume.pdf"
-                  download=""
+                  download
                   className="resume-title"
                 >
                   <RiDownloadLine />
