@@ -35,7 +35,7 @@ export const About = () => {
               <p>{dataabout.aboutme}</p>
               <div>
                 <a
-                  href="../../resume/sudharsan_resume.pdf"
+                  href="/pdf/sudharsan_resume.pdf"
                   download
                   className="resume-title"
                 >
