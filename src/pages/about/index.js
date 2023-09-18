@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
+import { RiDownloadLine } from "react-icons/ri";
 import {
   dataabout,
   meta,
@@ -32,10 +33,22 @@ export const About = () => {
           <Col lg="7" className="d-flex align-items-center">
             <div>
               <p>{dataabout.aboutme}</p>
+              <div>
+                <a
+                  href="../../resume/Sudharsan_resume_new.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  download={true}
+                  className="resume-title"
+                >
+                  <RiDownloadLine />
+                  &nbsp;&nbsp;Resume
+                </a>
+              </div>
             </div>
           </Col>
         </Row>
-        <Row className=" sec_sp">
+        {/* <Row className=" sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Work Timline</h3>
           </Col>
@@ -54,7 +67,7 @@ export const About = () => {
               </tbody>
             </table>
           </Col>
-        </Row>
+        </Row> */}
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Skills</h3>
@@ -71,7 +84,7 @@ export const About = () => {
                         width: `${data.value}%`,
                       }}
                     >
-                      <div className="progress-value">{data.value}%</div>
+                      <div className="progress-value">{data.value} %</div>
                     </div>
                   </div>
                 </div>
