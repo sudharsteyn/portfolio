@@ -33,7 +33,7 @@ export const About = () => {
           <Col lg="7" className="d-flex align-items-center">
             <div>
               <p>{dataabout.aboutme}</p>
-              <div>
+              <div className="downloadable-container">
                 <a
                   href="/pdf/sudharsan_resume.pdf"
                   download

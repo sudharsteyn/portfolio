@@ -70,10 +70,6 @@
   padding-bottom: 4px;
 }
 
-.resume-title {
-  text-decoration: none;
-}
-
 /*! CSS Used keyframes */
 
 @-webkit-keyframes fadeInUp {
@@ -100,4 +96,38 @@
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
   }
+}
+
+.downloadable-container {
+  margin-top: 26px;
+}
+
+.resume-title {
+  text-decoration: none;
+  font-size: 24px;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.resume-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--text-color);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.resume-title:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.resume-title:hover {
+  letter-spacing: 8px;
 }
