@@ -35,10 +35,8 @@ export const About = () => {
               <p>{dataabout.aboutme}</p>
               <div>
                 <a
-                  href="../../resume/Sudharsan_resume_new.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                  download={true}
+                  href="../../resume/sudharsan_resume.pdf"
+                  download=""
                   className="resume-title"
                 >
                   <RiDownloadLine />
